@@ -1,0 +1,56 @@
+{% extends "final/layout.html" %}
+{% load static %}
+
+{% block body %}
+<!-- each article -->
+<div id="article_container">
+    <div id="container_div">
+        <h1>{{ article.title }}</h1>
+        <br> 
+        <cite class="text-muted">written by {{ article.author }}</cite>
+        <br>
+        <br>
+        <cite class="text-muted">{{ article.date }}</cite>
+        <br><br><br>
+        <hr id="hr">
+        <p id="article_text"> {{ article.text }} </p>
+        <hr>
+        <!-- New comment form -->
+        {% if user.is_authenticated %}
+            <form action="{% url 'comment' article.id %}" method="post">
+                {% csrf_token %}
+            <input id="comment-box" class="form-control" type="text" name="comment" placeholder="Add comment...">
+            <br>
+            <input type="submit" value="Comment" class="btn btn-secondary">
+            </form>
+            <br>
+        {% endif %}
+        <!-- view comments -->
+        <p class="border-bottom">All Comments <span class="badge badge-secondary">{{ total_comments }}</span></p>
+        <div class="container mt-5">
+            {% for comment in comments %}
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                      <div class="user d-flex flex-row align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypACuX8ygmzipbD197uPBv40pqsvU8Egh-_Oo_xqg2OQqZbL1Cm-5XRxVcF3QjaocHCg&usqp=CAU" width="30" class="user-img rounded-circle mr-2">
+                        <span><small class="font-weight-bold text-primary">{{ comment.user }}</small> 
+                        <br>
+                        <small class="font-weight-bold">{{ comment.comment }}</small></span> 
+                      </div>
+                      <small class="text-muted">{{ comment.time }}</small>
+                      </div>                    
+                    </div>                
+                </div>             
+            </div>
+            <br> 
+            {% endfor %}    
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block script %}
+    <script src="{% static 'final/index.js' %}"></script>
+{% endblock %}

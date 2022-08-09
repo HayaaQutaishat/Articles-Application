@@ -1,0 +1,130 @@
+textarea {
+    min-height: 400px;
+}
+body {
+    font-family: 'Times New Roman', serif;
+    /* background-image: url("https://i.pinimg.com/474x/38/98/2f/38982f760e4b91a19fb7c79646b0a008.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-color: white;
+    background-size: 100%;  
+}
+#center_div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;   
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#vertical-center {
+
+    margin-left: 30%;
+    width: 200px;
+  }
+
+
+#element1 {
+    font-size: 70px;
+}
+#element2 {
+    font-size: 30px;
+    text-shadow: 5px 5px 3px #FEDA2E;
+}
+
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+.nav-link {
+   color: black;
+   font-size: 20px; 
+}
+
+.nav-link:hover {
+    color: black; 
+    text-decoration: underline;
+    text-decoration-color: #FEDA2E;
+ }
+ 
+#search_div {
+    margin-top: 90px;
+}
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+blockquote:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#article_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+#container_div {
+    background-color: #F8F6F0;
+    margin: 20px;
+    padding: 80px;
+    width: 900px;
+    height: auto;
+}
+#hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+#article_text {
+    padding: 70px;
+    font-size: 20px;
+}
+#comment-box {
+    height: 50px !important;
+    width: 600px;
+}
+
+#new_article_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+#new_article_div {
+    background-color: #F8F6F0;
+    margin: 20px;
+    padding: 80px;
+    width: 900px;
+    height: auto;
+}
+/* 
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  } */
+

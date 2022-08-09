@@ -1,0 +1,33 @@
+{% extends "final/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <!-- articles categories -->
+    <section class="bg-light pt-5 pb-5 shadow-sm">
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-12">
+              <h3 class="border-bottom mb-4">This page shares the best articles to read.</h3>
+            </div>
+          </div>
+          <div class="row">
+            {% for category in categories %}
+            <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+              <!-- make the entire card clickable -->
+              <div class="card" onclick="this.querySelector('a').click(); return true;">
+                <img src="{{ category.image }}" class="card-img-top" alt="Card Image">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">{{ category.type }}</h5>
+                  <a href="{% url 'category' category.id %}" class="btn btn-dark mt-auto align-self-start">Read more</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+{% endblock %}
+{% block script %}
+    <script src="{% static 'final/index.js' %}"></script>
+{% endblock %}

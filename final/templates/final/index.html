@@ -1,0 +1,26 @@
+{% extends "final/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="search_div" class="container">
+        <div class="row height d-flex justify-content-center align-items-center">
+          <div class="col-md-8">
+            <from action="{% url 'search' %}" method="post">
+              {% csrf_token %}
+              <input type="text" class="form-control form-input" placeholder="Search anything in your mind..."><br>
+              <button id="vertical-center" type="submit" class="btn btn-warning">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    <div id="center_div">
+        <h1 id="element1">All You Need is Read.</h1>
+        <p id="element2" style="font-family: 'Brush Script MT', cursive;">“We are drowning in information but starved for knowledge.”</p>
+    </div>
+
+ 
+
+{% endblock %}
+{% block script %}
+    <script src="{% static 'final/index.js' %}"></script>
+{% endblock %}
