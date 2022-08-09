@@ -3,12 +3,45 @@
 
 {% block body %}
 
+<div id="profile_heading">
+    <h3 >About {{ user }}.</h3><br>
+    <hr id="Hr">
+</div>
+
 <div id="grid-div">
-    <div class="grid-items"></div>
     <div class="grid-items">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypACuX8ygmzipbD197uPBv40pqsvU8Egh-_Oo_xqg2OQqZbL1Cm-5XRxVcF3QjaocHCg&usqp=CAU" width="100" class="user-img rounded-circle mr-2"><br><br>
-        <h2>Hi, I’m Hayaa.</h2>
-        <p class="lead">I'm an 24-year-old passionate learner, interested in more or less everything in this world. I am studying at a business-focused high school, love to dance, do sports, cook and read.</p>
+        
+        <section class="py-5 border">
+            <h5 >{{ user }}'s Articles.</h5><br>
+            <div class="container">
+            {% for article in user_articles %}
+                <div class="row">
+                    <div class="col-lg-6 mx-auto" onclick="this.querySelector('a').click(); return true;">
+                        <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                            <h5 class="card-title">{{ article.title }}</h5>
+                            <p class="mb-0 mt-2 font-italic">{{ article.brief }}</p>
+                            <footer class="blockquote-footer pt-4 mt-4 border-top">Written by
+                                <cite title="Source Title">{{ article.author }}</cite>
+                                <br>
+                                <cite title="Source Title">{{ article.date }}</cite>
+                                <br>
+                                <a id="cont_reading" href="{% url 'article' article.id %}">Click here to read more →</a>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+
+    <div class="grid-items">
+        <div class="border" style="padding: 20px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypACuX8ygmzipbD197uPBv40pqsvU8Egh-_Oo_xqg2OQqZbL1Cm-5XRxVcF3QjaocHCg&usqp=CAU" width="100" class="user-img rounded-circle mr-2"><br><br>
+            <h2>Hi, I’m {{ user }}.</h2>
+            <p><small >{{ user_profile.about }}</small></p>
+        </div>
     </div>
 </div>
   

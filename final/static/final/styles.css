@@ -109,6 +109,7 @@ blockquote:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
 
 }
 #new_article_div {
@@ -129,18 +130,38 @@ blockquote:hover {
   } */
 
 #grid-div {
-    background-color: #FEDA2E;
+    background-color: white;
     display: grid;
     padding: 20px;
     margin-top: 50px;
-    grid-column-gap: 100px;
+    grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-columns: 800px  400px;
 }
-
 .grid-items {
-    background-color: #F8F6F0;
+    background-color: white;
     font-size: 20px;
     padding: 20px;
     text-align: center;
 }
+
+#profile_heading {
+    text-align: center;
+    padding-top: 50px;
+   
+}
+
+#Hr {
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px; 
+}
+
+/* #cont_reading {
+
+} */

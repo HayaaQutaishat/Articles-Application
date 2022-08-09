@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from django.shortcuts import HttpResponse, HttpResponseRedirect, render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
-from final.models import User, Article, Categories, Comment
+from final.models import Profile, User, Article, Categories, Comment
 from django.contrib import messages
 from django import forms
 # Create your views here.
@@ -127,12 +127,16 @@ def search(request):
         })
     return render(request, "final/search.html")
     
-
-
-
 def author(request, user):
-    
-    return render(request, "final/author.html") 
+    user = User.objects.get(username=user)
+    user_profile = Profile.objects.get(user=user)
+    print(user_profile.about)
+    user_articles = user.articles.all()
+    return render(request, "final/author.html", {
+        "user_articles": user_articles,
+        "user_profile": user_profile,
+        "user": user
+    }) 
 
 
 

@@ -18,7 +18,9 @@
                 <img src="{{ category.image }}" class="card-img-top" alt="Card Image">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">{{ category.type }}</h5>
-                  <a href="{% url 'category' category.id %}" class="btn btn-dark mt-auto align-self-start">Read more</a>
+                  <!-- <a href="{% url 'category' category.id %}" class="btn btn-dark mt-auto align-self-start">Read more</a> -->
+                  <a class="text-decoration-none text-dark" href="{% url 'category' category.id %}">Read more →</a>
+
                 </div>
               </div>
             </div>
