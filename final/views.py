@@ -80,15 +80,15 @@ def category(request, category_id):
 
 def article(request, article_id):
     article = Article.objects.get(pk=article_id)
-    comments = article.comments.all()
+    article_category = article.category
+    comments = article.comments.all().order_by('-time')
     total_comments = article.comments.count()
-    print(total_comments)
     return render(request, "final/article.html", {
         "article": article,
         "comments": comments,
-        "total_comments": total_comments
+        "total_comments": total_comments,
+        "article_category": article_category
     })
-
 
 @login_required
 def comment(request, article_id):
@@ -97,9 +97,10 @@ def comment(request, article_id):
             article = Article.objects.get(pk=article_id)
             comment = Comment.objects.create(user=request.user,article=article,comment=comment)
             comment.save()
+            messages.success(request, 'Comment successfully Added.')
+            return HttpResponseRedirect(reverse('article', kwargs={'article_id': article.id}))
         return render(request, "final/index.html")
 
-      
 @login_required
 def new_article(request):
     if request.method == "POST":
@@ -116,9 +117,16 @@ def new_article(request):
         "options": categories
     })
 
-
 def search(request):
-        return render(request, "final/search.html")
+    if request.method == "POST":
+        search = request.POST["search"]
+        articles = Article.objects.filter(title__contains=search)
+        return render(request, "final/search.html", {
+            "articles": articles,
+            "search": search
+        })
+    return render(request, "final/search.html")
+    
 
 
 

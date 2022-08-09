@@ -18,7 +18,7 @@ class Article(models.Model):
     brief = models.TextField()
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-    category = models.ForeignKey(Categories, on_delete=models.CASCADE, blank=True, null=True)
+    category = models.ForeignKey(Categories, on_delete=models.CASCADE, blank=True, null=True, related_name="categories")
 
     @classmethod
     def create(cls, author, title, brief, text, category):

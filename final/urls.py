@@ -14,7 +14,4 @@ urlpatterns = [
     # path("author/<str:user>", views.author, name="author"),
     path("new_article", views.new_article, name="new_article"),
     path("search", views.search, name="search"),
-
-
-
 ]

@@ -2,16 +2,27 @@
 {% load static %}
 
 {% block body %}
+
+{% for message in messages %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{ message }}</strong> 
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>   
+{% endfor %}
+
 <!-- each article -->
 <div id="article_container">
     <div id="container_div">
         <h1>{{ article.title }}</h1>
         <br> 
         <cite class="text-muted">written by {{ article.author }}</cite>
-        <br>
-        <br>
+        <br><br>
         <cite class="text-muted">{{ article.date }}</cite>
-        <br><br><br>
+        <br><br>
+        <cite class="text-muted">Category: {{ article_category }}</cite>
+        <br><br>
         <hr id="hr">
         <p id="article_text"> {{ article.text }} </p>
         <hr>
