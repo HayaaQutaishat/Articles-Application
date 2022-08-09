@@ -128,3 +128,19 @@ blockquote:hover {
     text-align: center;
   } */
 
+#grid-div {
+    background-color: #FEDA2E;
+    display: grid;
+    padding: 20px;
+    margin-top: 50px;
+    grid-column-gap: 100px;
+    grid-row-gap: 10px;
+    grid-template-columns: 800px  400px;
+}
+
+.grid-items {
+    background-color: #F8F6F0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}

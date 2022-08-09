@@ -17,7 +17,7 @@
     <div id="container_div">
         <h1>{{ article.title }}</h1>
         <br> 
-        <cite class="text-muted">written by {{ article.author }}</cite>
+        <cite class="text-muted">written by <a class="text-muted"href="{% url 'author' article.author %}">{{ article.author }}</a></cite>
         <br><br>
         <cite class="text-muted">{{ article.date }}</cite>
         <br><br>

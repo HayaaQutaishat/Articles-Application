@@ -28,7 +28,6 @@ class Article(models.Model):
     def __str__(self):
         return f"{self.title}"
 
-
 class Comment(models.Model):
     comment = models.CharField(max_length=5000)
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="comments")
@@ -42,3 +41,7 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"{self.comment}"
+
+
+
+    

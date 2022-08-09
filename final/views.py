@@ -130,9 +130,9 @@ def search(request):
 
 
 
-# def author(request, user):
+def author(request, user):
     
-#     return render(request, "final/author.html") 
+    return render(request, "final/author.html") 
 
 
 

@@ -2,13 +2,20 @@
 {% load static %}
 
 {% block body %}
+
     <div id="search_div" class="container">
         <div class="row height d-flex justify-content-center align-items-center">
           <div class="col-md-8">
             <form action="{% url 'search' %}" method="post">
               {% csrf_token %}
-              <input type="text" name="search" class="form-control form-input" placeholder="Search anything in your mind..."><br>
-              <button id="vertical-center" type="submit" class="btn btn-warning">Search</button>
+              <div class="input-group">
+                <input name="search" type="text" class="form-control" placeholder="Search anything in your mind...">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </div>

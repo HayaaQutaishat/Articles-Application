@@ -24,6 +24,8 @@
                     </blockquote>
                 </div>
             </div>
+            {% empty %}
+                <h5 style="text-align: center">Unfortunately there's no articles for {{ search }}!</h5>
             {% endfor %}
         </div>
     </section>
