@@ -11,7 +11,7 @@ This web application is not similar to anything we have already worked on. It's 
 
 ### Project Requirements :
 
--If the user just want to read some article, he can just click "Random Article" button on the top, and he will get one random article. Additionally, you don't need to log in for those actions. 
+-If users just want to read some article, they can just click "Random Article" button on the top, and they will get one random article. Additionally, they don't need to log in for those actions. 
 
 
 
