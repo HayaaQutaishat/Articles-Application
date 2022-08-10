@@ -11,8 +11,8 @@ This web application is not similar to anything we have already worked on. It's 
 
 ### Project Requirements :
 
-If the user just want to read some article, he can just click "Random Article" button on the top, and he will get one random article. Additionally, you don't need to log in for those actions. 
+-If the user just want to read some article, he can just click "Random Article" button on the top, and he will get one random article. Additionally, you don't need to log in for those actions. 
 
 
 
-Logged users have the ability to create a new article and add it to the other existing articles.
+-Logged users have the ability to create a new article and add it to the other existing articles.
