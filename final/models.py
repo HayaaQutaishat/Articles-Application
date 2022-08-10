@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 class User(AbstractUser):
@@ -51,3 +51,21 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"{self.user}"
+
+class Rating(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    score = models.IntegerField(default=0,
+        validators=[
+            MaxValueValidator(5),
+            MinValueValidator(0)
+        ]
+    )
+
+    @classmethod
+    def create(cls, user, article, score):
+        rating = cls(user=user, article=article, score=score)
+        return rating
+
+    def __str__(self):
+        return str(self.pk)

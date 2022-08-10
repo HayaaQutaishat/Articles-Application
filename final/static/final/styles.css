@@ -162,6 +162,11 @@ blockquote:hover {
     margin: -50px auto 10px; 
 }
 
-/* #cont_reading {
+.checked {
+    color: #FFDB58;
+}
 
-} */
+.my_btn {
+    background-color: inherit !important;
+    border: 0 !important;
+}

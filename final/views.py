@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from django.shortcuts import HttpResponse, HttpResponseRedirect, render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
-from final.models import Profile, User, Article, Categories, Comment
+from final.models import Profile, User, Article, Categories, Comment, Rating
 from django.contrib import messages
 from django import forms
 # Create your views here.
@@ -138,8 +138,30 @@ def author(request, user):
         "user": user
     }) 
 
+def random(request):
+    random_article = Article.objects.order_by('?')[0]
+    return render(request, "final/random.html", {
+        "random_article": random_article
+    })
 
+def rating(request):
 
+    # adding a new post must be via POST
+    if request.method != "POST":
+        return JsonResponse({"error": "POST request required."}, status=400)
 
+    # Check the content
+    data = json.loads(request.body)
+    id = data.get("id", "")
+    article = Article.objects.get(pk=id)
+    user = request.user
+    score = 0
+    rating = Rating.create(user=user, article=article, score=score)
+    # rating.save()
+    print(article)
+    print(id)
+
+   
+    return JsonResponse({"article_id": id }, status=201)
 
 
