@@ -145,23 +145,17 @@ def random(request):
     })
 
 def rating(request):
-
-    # adding a new post must be via POST
     if request.method != "POST":
         return JsonResponse({"error": "POST request required."}, status=400)
-
-    # Check the content
+    # Check the data
     data = json.loads(request.body)
     id = data.get("id", "")
     article = Article.objects.get(pk=id)
     user = request.user
-    score = 0
+    score = data.get("score", "")
     rating = Rating.create(user=user, article=article, score=score)
-    # rating.save()
-    print(article)
-    print(id)
+    rating.save()
+    return JsonResponse({"scroe": score }, status=201)
 
-   
-    return JsonResponse({"article_id": id }, status=201)
 
 

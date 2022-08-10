@@ -52,33 +52,53 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
+
+    // to convert btn id from string into integer :
+    const getNumericValue = (stringValue) => {
+        let numericValue;
+        if (stringValue === 'first') {
+            numericValue = 1;
+        } else if (stringValue === 'second') {
+            numericValue = 2;
+        }  else if (stringValue === 'third') {
+            numericValue = 3;
+        }  else if (stringValue === 'fourth') {
+            numericValue = 4;
+        }  else if (stringValue === 'fifth') {
+            numericValue = 5;
+        } else {
+            numericValue = 0;
+        } return numericValue;
+    }
+
     const arr = [one, two, three, four, five]
 
     arr.forEach(item => item.addEventListener('mouseover', (event)=> {
         handleSelection(event.target.id)
     }))
     arr.forEach(item => item.addEventListener('click', (event)=> {
-        // grab the id of the clicked star
+        // grab the id of the clicked star (first,second,third   ,,,, )
         const val = event.target.id;
+        // console.log(val)
         form.addEventListener('submit', e=> {
             e.preventDefault()
             // grab the id of the rated article 
             const id = e.target.id
-            console.log(id)
-
-
+            // console.log(id)
+            // grab the id of the score of the article
+            const score = getNumericValue(val);
+            // console.log(score)
             fetch('/rating', {
                 method: 'POST',
                 body: JSON.stringify({
                     id: id,
+                    score: score
                 })
               })
               .then(response => response.json())
               .then(result => {
-                  // Print result
                   console.log(result);
               });
-
         })
     }))
 })
