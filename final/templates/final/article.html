@@ -63,15 +63,23 @@
         <p class="border-bottom">All Comments <span class="badge badge-secondary">{{ total_comments }}</span></p>
         <div class="container mt-5">
             {% for comment in comments %}
-            <div class="row">
+            <div class="row" >
                 <div class="col-md-11">
-                    <div class="card p-3">
+                    <div class="card p-3" id="comment_view">
                         <div class="d-flex justify-content-between align-items-center">
                       <div class="user d-flex flex-row align-items-center">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypACuX8ygmzipbD197uPBv40pqsvU8Egh-_Oo_xqg2OQqZbL1Cm-5XRxVcF3QjaocHCg&usqp=CAU" width="30" class="user-img rounded-circle mr-2">
                         <span><small class="font-weight-bold text-primary">{{ comment.user }}</small> 
                         <br>
-                        <small class="font-weight-bold">{{ comment.comment }}</small></span> 
+                        <small class="font-weight-bold">{{ comment.comment }}</small><br>
+                        <!-- to edit your comment -->
+                        {% if user.is_authenticated and user == comment.user %}
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <button id="{{ comment.id }}" style="width:60px; height:40px" type="submit" class="btn btn-secondary edit_btn">Edit</button>
+                        </form>
+                        {% endif %}
+                        </span> 
                       </div>
                       <small class="text-muted">{{ comment.time }}</small>
                       </div>                    
@@ -88,3 +96,5 @@
 {% block script %}
     <script src="{% static 'final/index.js' %}"></script>
 {% endblock %}
+
+

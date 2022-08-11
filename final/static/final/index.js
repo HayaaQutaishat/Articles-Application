@@ -101,5 +101,58 @@ document.addEventListener('DOMContentLoaded', function() {
               });
         })
     }))
-})
+
+    
+    const edit_btns = document.querySelectorAll('.edit_btn')
+    edit_btns.forEach(btn => {
+        btn.addEventListener('click', (event)=>{
+            event.preventDefault()
+            const comment_id = event.target.id;
+            edit_comment(comment_id)
+        })
+      });
+
+
+      function edit_comment(comment_id) {
+        fetch('/comment', {
+            method: 'POST',
+            body: JSON.stringify({
+                comment_id: comment_id,
+            })
+          })
+          .then(response => response.json())
+          .then(comment => {
+            //   alert(comment);
+              let edit_comment_div = document.createElement('div');
+              edit_comment_div.innerHTML = 
+              `<form class="edit-form">
+                <textarea id="new_comment" name="new_comment" autofocus" class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;">${comment}</textarea><br>
+                <input type="submit" value="Save" class="btn btn-primary"/>
+              </form>`
+              const comment_element = document.querySelector('#comment_view');
+              comment_element.append(edit_comment_div);
+              document.querySelector('.edit-form').addEventListener('submit',(e)=> {
+                e.preventDefault()
+                edit(comment_id)
+              });
+          });
+        }
+        function edit(comment_id) {
+            const new_comment = document.querySelector('#new_comment').value;
+            fetch('/edit_comment', {
+              method: 'POST',
+              body: JSON.stringify({
+                new_comment: new_comment,
+                comment_id: comment_id
+              })
+            })
+            .then(response => response.json())
+            .then(result => {
+                // Print result
+                location.reload();
+                console.log(result);
+            });
+            return false; 
+          }
+    })
 

@@ -192,3 +192,29 @@ def read_later_remove(request, article_id):
             user.read_later.remove(article)
         return render(request, "final/read_later.html")
 
+
+@login_required
+def comment(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "POST request required."}, status=400)
+    # Check the data
+    data = json.loads(request.body)
+    comment_id = data.get("comment_id", "")
+    comment = Comment.objects.get(pk=comment_id)
+    return JsonResponse(comment.comment, safe=False)
+
+
+
+def edit_comment(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "POST request required."}, status=400)
+    # Check the data
+    data = json.loads(request.body)
+    new_comment_text = data.get("new_comment", "")
+    comment_id = data.get("comment_id", "")
+    comment = Comment.objects.get(pk=comment_id)
+    comment.comment = new_comment_text
+    comment.save()
+    return JsonResponse({"data": data}, status=201)
+
+

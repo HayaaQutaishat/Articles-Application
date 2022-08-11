@@ -18,7 +18,13 @@ urlpatterns = [
     path("read_later", views.read_later, name="read_later"),
     path("read_later_add/<int:article_id>", views.read_later_add, name="read_later_add"),
     path("read_later_remove/<int:article_id>", views.read_later_remove, name="read_later_remove"),
+    path("edit_comment", views.edit_comment, name="edit_comment"),
+
+
 
     # API Routes 
     path("rating", views.rating, name="rating"),
+    path("comment", views.comment, name="comment"),
+    
+    
 ]
