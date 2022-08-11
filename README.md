@@ -24,6 +24,18 @@ This web application is not similar to anything we have already worked on. It's 
 
 ## Project Pages :
 
+### Login Page :
+
+This is the entry page to the website that requires user identification and authentication, regularly performed by entering a username and password combination.
+
+### Register Page :
+
+This signup page (also known as a registration page) enables users and organizations to independently register and gain access to your system. 
+
+### Logout Page :
+
+This page informs the computer or website that the current user wishes to end the login session. 
+
 ### Home Page :
 
 -In this page, you can search text in title of articles by input any word in the center input box, and click "Search" button.
@@ -39,12 +51,19 @@ This web application is not similar to anything we have already worked on. It's 
 
 ### Articles Page :
 
-In this page, you can get all the articles with title, a simple brief, the author, and the date of creating this article.
+-In this page, you can get all the articles with title, a simple brief, the author, and the date of creating this article.
 
-If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
-
-
+-If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
 
 
+### Article Page :
 
+-In the article page, the user will be able to see all the details about one article, such as the title, author, publish date, category of that article, and the entire text of the article.
+
+-Only logged users will have the ability to press "Add to Read Later" button which will allow them to add this article to "Read Later" page so they can find it easily later and read it at any time.
+
+-Rating part (Not done yet)
+
+
+### Article Page :
 
