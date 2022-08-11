@@ -21,16 +21,31 @@
         <br><br>
         <cite class="text-muted">{{ article.date }}</cite>
         <br><br>
-        <cite class="text-muted">Category: {{ article_category }}</cite>
-        <br><br>
-        <form class="rate-form" action="" method="post" id="{{ article.id }}">
+        <cite class="text-muted">Category: {{ article_category }}</cite><br><br>
+        {% if user.is_authenticated %}
+        {% if in_read_later %}
+        <form action="{% url 'read_later_remove' article.id %}" method="post">
             {% csrf_token %}
-            <button type="submit" class="fa fa-star my_btn" id="first"></button>
-            <button type="submit" class="fa fa-star my_btn" id="second"></button>
-            <button type="submit" class="fa fa-star my_btn" id="third"></button>
-            <button type="submit" class="fa fa-star my_btn" id="fourth"></button>
-            <button type="submit" class="fa fa-star my_btn" id="fifth"></button>
+            <button type="submit" class="btn btn-outline-secondary">Remove from Read Later</button>
         </form>
+        {% else %}
+        <form action="{% url 'read_later_add' article.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-outline-secondary">Add to Read Later</button>
+        </form>
+        {% endif %}
+        {% endif %}
+            <br>
+            {% if user.is_authenticated %}
+                <form class="rate-form" action="" method="post" id="{{ article.id }}">
+                    {% csrf_token %}
+                    <button type="submit" class="fa fa-star my_btn" id="first"></button>
+                    <button type="submit" class="fa fa-star my_btn" id="second"></button>
+                    <button type="submit" class="fa fa-star my_btn" id="third"></button>
+                    <button type="submit" class="fa fa-star my_btn" id="fourth"></button>
+                    <button type="submit" class="fa fa-star my_btn" id="fifth"></button>
+                </form>
+        {% endif %}
         <hr id="hr">
         <p id="article_text"> {{ article.text }} </p>
         <hr>

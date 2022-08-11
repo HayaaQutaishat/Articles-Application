@@ -20,6 +20,8 @@ class Article(models.Model):
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Categories, on_delete=models.CASCADE, blank=True, null=True, related_name="categories")
+    read_later = models.ManyToManyField(User, blank=True, related_name="read_later")
+
 
     @classmethod
     def create(cls, author, title, brief, text, category):
@@ -43,12 +45,10 @@ class Comment(models.Model):
     def __str__(self):
         return f"{self.comment}"
 
-
 class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     about = models.CharField(max_length=5000)
     
-
     def __str__(self):
         return f"{self.user}"
 

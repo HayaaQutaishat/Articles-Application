@@ -17,12 +17,7 @@
         <i class="bi bi-book"></i>
         <a class="nav-link" href="{% url 'index' %}">Home.</a>
         <div>
-          <ul class="navbar-nav mr-auto">
-            <!-- {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'author' request.user %}"><strong>{{ request.user }}</strong></a>
-                </li>
-            {% endif %} -->
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="{% url 'categories' %}">Categories.</a>
             </li>
@@ -33,6 +28,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'new_article' %}">Create an Article.</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'read_later' %}">Read Later.</a>
+              </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Log Out.</a>
                 </li>
@@ -53,94 +51,9 @@
             {% endblock %}
         </div>
 
-        <!-- footer -->
-    <!-- <div id="footer" class="container my-5">
 
-    <footer id="footer" style="background-color: #ffede7;">
-      <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">shopping online</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">frequently asked questions</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">delivery</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">pricing</a>
-              </li> -->
-              <!-- <li>
-                <a href="#!" style="color: #4f4f4f;">where we deliver?</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">git cards</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">frequently asked questions</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">delivery and payment</a>
-              </li> -->
-              <!-- <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">activate the card</a>
-              </li>
-              <li>
-                <a href="#!" style="color: #4f4f4f;">rules</a>
-              </li>
-            </ul>
-          </div> -->
-          <!-- <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">company</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">buy a gift card</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">history</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">return</a>
-              </li>
-              <li>
-                <a href="#!" style="color: #4f4f4f;">contact</a>
-              </li>
-            </ul> -->
-          <!-- </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">diamond club</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">registration</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">application</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">about program</a>
-              </li>
-              <li>
-                <a href="#!" style="color: #4f4f4f;">rules</a>
-              </li> -->
-            <!-- </ul>
-          </div>
-        </div>
-      </div>
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-    </footer>
-  </div> -->
-
-        
-
-
-
-
-
+          
+   
+         
     </body>
 </html>

@@ -1,4 +1,5 @@
 import json
+from wsgiref.util import request_uri
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
@@ -83,11 +84,18 @@ def article(request, article_id):
     article_category = article.category
     comments = article.comments.all().order_by('-time')
     total_comments = article.comments.count()
+    user = request.user
+    in_read_later = False
+    if user.is_authenticated:
+        if article in user.read_later.all():
+            in_read_later = True
+
     return render(request, "final/article.html", {
         "article": article,
         "comments": comments,
         "total_comments": total_comments,
-        "article_category": article_category
+        "article_category": article_category,
+        "in_read_later": in_read_later
     })
 
 @login_required
@@ -158,4 +166,29 @@ def rating(request):
     return JsonResponse({"scroe": score }, status=201)
 
 
+@login_required
+def read_later(request):
+    user = request.user
+    user_articles = user.read_later.all()
+    print(user_articles)
+    return render(request, "final/read_later.html", {
+        "user_articles": user_articles
+    })
+
+
+@login_required
+def read_later_add(request, article_id):
+        if request.method == "POST":
+            article = Article.objects.get(pk=article_id)
+            user = request.user
+            user.read_later.add(article)
+        return render(request, "final/read_later.html")
+
+@login_required
+def read_later_remove(request, article_id):
+        if request.method == "POST":
+            article = Article.objects.get(pk=article_id)
+            user = request.user
+            user.read_later.remove(article)
+        return render(request, "final/read_later.html")
 

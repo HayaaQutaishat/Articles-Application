@@ -1,0 +1,32 @@
+{% extends "final/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+
+<section class="py-5">
+    <div class="container">
+    {% for article in user_articles %}
+        <div class="row">
+            <div class="col-lg-6 mx-auto" onclick="this.querySelector('a').click(); return true;">
+                <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                    <h5 class="card-title">{{ article.title }}</h5>
+                    <p class="mb-0 mt-2 font-italic">{{ article.brief }}</p>
+                    <footer class="blockquote-footer pt-4 mt-4 border-top">Written by
+                        <cite title="Source Title">{{ article.author }}</cite>
+                        <br>
+                        <cite title="Source Title">{{ article.date }}</cite>
+                        <br>
+                        <a  class="text-decoration-none text-dark" href="{% url 'article' article.id %}">Click here to read more →</a>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+  
+{% endblock %}
+{% block script %}
+    <script src="{% static 'final/index.js' %}"></script>
+{% endblock %}

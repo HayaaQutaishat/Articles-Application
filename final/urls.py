@@ -15,6 +15,9 @@ urlpatterns = [
     path("new_article", views.new_article, name="new_article"),
     path("search", views.search, name="search"),
     path("random", views.random, name="random"),
+    path("read_later", views.read_later, name="read_later"),
+    path("read_later_add/<int:article_id>", views.read_later_add, name="read_later_add"),
+    path("read_later_remove/<int:article_id>", views.read_later_remove, name="read_later_remove"),
 
     # API Routes 
     path("rating", views.rating, name="rating"),
