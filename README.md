@@ -6,14 +6,14 @@
 
 This website is articles platform. This was the final project of HarvardX's CS50W course in 2022 and was built using Python, Django, Javascript ,CSS, HTML and Bootstrap.
 
-This web application is not similar to anything we have already worked on. It's not a social media app nor an e-commerce website. In this website users will be able to read, rate, comment on those articles, and add any of them to "read later". 
+This web application is not similar to anything we have already worked on. It's not a social media app nor an e-commerce website. In this website users will be able to read, rate, comment on those articles, and add any of them to "read later" so they can easily find them later. 
 
 
 ### Project Structure :
 
--In the Home page, users can search text in any part of articles title by input any words in the input box, and click "Search" button.
+-In the Home page, users can search text in any part of articles title by typing any words in the input box, and click "Search" button.
 
--If users just want to read some article, they can just click "Random Article" button on the top, and they will get one random article. Additionally, they don't need to log in for those actions. 
+-If users just want to read any article, they can just click "Random Article" button on the top, and they will get one random article in a particular topc. Additionally, they don't need to log in for those actions. 
 
 -When users click on "Categories", they will be taken to a page that shows all the categories in the website. (Health, Environmental Issues, Food, Animals and Art). Each category contains number of articles related to the topic. Clicking on any of those categories will take the user to a new page which has all the related articles. 
 
