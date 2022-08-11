@@ -21,3 +21,13 @@ This web application is not similar to anything we have already worked on. It's 
 
 -Also, logged user can add any article to "Read Later" where they can read it anytime by just clicking on "Read Later" in the main page of the website.
 
+
+## Project Pages :
+
+### Home Page :
+
+-In this page, you can search text in title of articles by input any word in the center input box, and click "Search" button.
+
+-In addition, if you just want to read something new, just click "Random Article" button on the top, and you will get some articles randomly. 
+
+-There's no need to be logged in in order to do those actions. 
