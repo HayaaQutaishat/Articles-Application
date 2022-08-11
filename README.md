@@ -31,3 +31,20 @@ This web application is not similar to anything we have already worked on. It's 
 -In addition, if you just want to read something new, just click "Random Article" button on the top, and you will get some articles randomly. 
 
 -There's no need to be logged in in order to do those actions. 
+
+### Categories Page :
+
+-This page shows all the topics in the website. (Health, Environmental Issues, Food, Animals and Art). Each category contains number of articles related to the topic. Clicking on any of those categories will take the user to a new page which has all the related articles.
+
+
+### Articles Page :
+
+In this page, you can get all the articles with title, a simple brief, the author, and the date of creating this article.
+
+If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
+
+
+
+
+
+
