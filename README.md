@@ -59,6 +59,8 @@ This page informs the computer or website that the current user wishes to end th
 
 -If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
 
+<img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184349610-eccd3257-1515-4b38-8547-d55420b215dc.png">
+
 
 ### Article Page :
 
