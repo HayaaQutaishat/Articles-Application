@@ -55,20 +55,22 @@ This page informs the computer or website that the current user wishes to end th
 
 ### Articles Page :
 
--In this page, you can get all the articles with title, a simple brief, the author, and the date of creating this article.
+-In this page, you can get all the articles with title, a simple brief, the author, and the date of publishing this article.
 
--If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
+-If the user is interested in any of those articles, he can click at the article at any place in the card, and he will be redirected to the full article page or he can just click on "Click here to read more".
 
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184350596-7044017e-f395-4d4f-9b3a-76398faa9f42.png">
 
 ### Article Page :
 
--In the article page, the user will be able to see all the details about one article, such as the title, author, publish date, category of that article, and the entire text of the article.
+-In the article page, the user will be able to see all the details about one article, such as the title, author, publish date, category of that article, and the entire text of the article. In the bottom of the page, all users can see all the comments on this particular article, who added that comment and the time of adding it.
 
 -Only logged users will have the ability to press "Add to Read Later" button which will allow them to add this article to "Read Later" page so they can find it easily later and read it at any time.
 
 <img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
+
+-Also, logged in users can add comments on articles. Besides, each user can edit his comment and save it, then the new comment will appear in the page.
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
 
@@ -76,5 +78,6 @@ This page informs the computer or website that the current user wishes to end th
 -Rating part (Not done yet)
 
 
-### Article Page :
+### Read Later Page :
 
+-In this page, users can see all the articles they added to be read later. So this will make it very easy to remember which articles they are interested in. 
