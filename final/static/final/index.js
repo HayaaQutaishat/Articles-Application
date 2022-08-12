@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
       function edit_comment(comment_id) {
-        fetch('/comment', {
+        fetch('/commentt', {
             method: 'POST',
             body: JSON.stringify({
                 comment_id: comment_id,

@@ -106,8 +106,8 @@ def comment(request, article_id):
             comment = Comment.objects.create(user=request.user,article=article,comment=comment)
             comment.save()
             messages.success(request, 'Comment successfully Added.')
-            return HttpResponseRedirect(reverse('article', kwargs={'article_id': article.id}))
-        return render(request, "final/index.html")
+            return HttpResponseRedirect(reverse("article", args=(article_id,)))
+        return render(request, "final/article.html")
 
 @login_required
 def new_article(request):
@@ -194,7 +194,7 @@ def read_later_remove(request, article_id):
 
 
 @login_required
-def comment(request):
+def commentt(request):
     if request.method != "POST":
         return JsonResponse({"error": "POST request required."}, status=400)
     # Check the data
@@ -204,7 +204,7 @@ def comment(request):
     return JsonResponse(comment.comment, safe=False)
 
 
-
+@login_required
 def edit_comment(request):
     if request.method != "POST":
         return JsonResponse({"error": "POST request required."}, status=400)
@@ -216,5 +216,15 @@ def edit_comment(request):
     comment.comment = new_comment_text
     comment.save()
     return JsonResponse({"data": data}, status=201)
+
+
+@login_required
+def delete_article(request, article_id):
+    article = Article.objects.get(pk=article_id)
+    article_category = article.category
+    category_id = article_category.id
+    article.delete()
+    messages.success(request, 'Article successfully deleted.')
+    return HttpResponseRedirect(reverse("category", args=(category_id,)))
 
 
