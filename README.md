@@ -44,6 +44,8 @@ This page informs the computer or website that the current user wishes to end th
 
 -There's no need to be logged in in order to do those actions. 
 
+<img width="1440" alt="im1" src="https://user-images.githubusercontent.com/95029840/184348451-745b9a42-c786-434c-9630-de065f73860a.png">
+
 ### Categories Page :
 
 -This page shows all the topics in the website. (Health, Environmental Issues, Food, Animals and Art). Each category contains number of articles related to the topic. Clicking on any of those categories will take the user to a new page which has all the related articles.
