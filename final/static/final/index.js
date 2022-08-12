@@ -5,8 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const three = document.querySelector('#third')
     const four = document.querySelector('#fourth')
     const five = document.querySelector('#fifth')
-
     const form = document.querySelector('.rate-form')
+
+    // Bootstrap Modal (Popup)
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+    myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+    })
 
     const handleSelection = (selection) => {
         switch(selection) {
