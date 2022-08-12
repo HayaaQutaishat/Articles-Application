@@ -4,7 +4,7 @@
 
 ### Project purpose :
 
-This website is articles platform. This was the final project of HarvardX's CS50W course in 2022 and was built using Python, Django, Javascript ,CSS, HTML and Bootstrap.
+This website is an articles platform. This was the final project of HarvardX's CS50W course in 2022 and was built using Python, Django, Javascript ,CSS, HTML and Bootstrap.
 
 This web application is not similar to anything we have already worked on. It's not a social media app nor an e-commerce website. In this website users will be able to read, rate, comment on those articles, and add any of them to "read later" so they can easily find them later. 
 
