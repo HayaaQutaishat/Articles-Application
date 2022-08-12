@@ -90,5 +90,17 @@ This page informs the computer or website that the current user wishes to end th
 <img width="1440" alt="Screen Shot 2022-08-12 at 2 47 58 PM" src="https://user-images.githubusercontent.com/95029840/184357882-dfce6ebd-bc8a-46e9-b570-a15c2ae88331.png">
 
 
+### Create New Article Page :
+
+-Only logged in users have the ability to create new articles and publish them in the website.
+
+-The following picture shows the form that the users will submit in order to create a new article. Each article should has title, brief, and the content of the article itself. Also users should select the category of the article.
+
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 3 28 42 PM" src="https://user-images.githubusercontent.com/95029840/184363780-cfe2f78e-a05a-4a69-9208-bbb2a4f23ce0.png">
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 3 35 15 PM" src="https://user-images.githubusercontent.com/95029840/184364948-289849bf-cec5-46e3-8f83-e6412df219f3.png">
+
+
 
 
