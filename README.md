@@ -4,7 +4,7 @@
 
 ### Project purpose :
 
-This website is articles platform. This was the final project of HarvardX's CS50W course in 2022 and was built using Python, Django, Javascript ,CSS, HTML and Bootstrap.
+This website is an articles platform. This was the final project of HarvardX's CS50W course in 2022 and was built using Python, Django, Javascript ,CSS, HTML and Bootstrap.
 
 This web application is not similar to anything we have already worked on. It's not a social media app nor an e-commerce website. In this website users will be able to read, rate, comment on those articles, and add any of them to "read later" so they can easily find them later. 
 
@@ -44,26 +44,70 @@ This page informs the computer or website that the current user wishes to end th
 
 -There's no need to be logged in in order to do those actions. 
 
+<img width="1440" alt="im1" src="https://user-images.githubusercontent.com/95029840/184348451-745b9a42-c786-434c-9630-de065f73860a.png">
+
 ### Categories Page :
 
 -This page shows all the topics in the website. (Health, Environmental Issues, Food, Animals and Art). Each category contains number of articles related to the topic. Clicking on any of those categories will take the user to a new page which has all the related articles.
 
+<img width="1440" alt="Screen Shot 2022-08-12 at 1 56 13 PM" src="https://user-images.githubusercontent.com/95029840/184349345-d80537bd-bbfb-46d6-adef-066155d3958f.png">
+
 
 ### Articles Page :
 
--In this page, you can get all the articles with title, a simple brief, the author, and the date of creating this article.
+-In this page, you can get all the articles with title, a simple brief, the author, and the date of publishing this article.
 
--If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
+-If the user is interested in any of those articles, he can click at the article at any place in the card, and he will be redirected to the full article page or he can just click on "Click here to read more".
 
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184350596-7044017e-f395-4d4f-9b3a-76398faa9f42.png">
 
 ### Article Page :
 
--In the article page, the user will be able to see all the details about one article, such as the title, author, publish date, category of that article, and the entire text of the article.
+-In the article page, the user will be able to see all the details about one article, such as the title, author, publish date, category of that article, and the entire text of the article. In the bottom of the page, all users can see all the comments on this particular article, who added that comment and the time of adding it.
 
--Only logged users will have the ability to press "Add to Read Later" button which will allow them to add this article to "Read Later" page so they can find it easily later and read it at any time.
+-Only logged in users will have the ability to press "Add to Read Later" button which will allow them to add this article to "Read Later" page so they can find it easily later and read it at any time.
+
+
+<img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
+
+-Also, logged in users can add comments on articles. Besides, each user can edit his comment and save it, then the new comment will appear in the page.
+
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
+
+-If the current logged in user is the author of the article which means he is the user who created that article, he can delete the article by pressing on "Delete" button. Clicking on that button will show a pop-up window created with bootstrap Modal to make sure that the user really wants to delete that article.
+
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 3 44 22 PM" src="https://user-images.githubusercontent.com/95029840/184366824-3c58f433-f4fd-453e-8062-d4c3f63ba1c2.png">
+
 
 -Rating part (Not done yet)
 
 
-### Article Page :
+### Read Later Page :
+
+-In this page, users can see all the articles they added to be read later. So this will make it very easy to remember which articles they are interested in. 
+
+
+### Author Page :
+
+-This page shows some information about all authors in the website. Informations like the name of the author, short summary about him and all the articles that he published. 
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 2 47 58 PM" src="https://user-images.githubusercontent.com/95029840/184357882-dfce6ebd-bc8a-46e9-b570-a15c2ae88331.png">
+
+
+### Create New Article Page :
+
+-Only logged in users have the ability to create new articles and publish them in the website.
+
+-The following picture shows the form that the users will submit in order to create a new article. Each article should has title, brief, and the content of the article itself. Also users should select the category of the article.
+
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 3 28 42 PM" src="https://user-images.githubusercontent.com/95029840/184363780-cfe2f78e-a05a-4a69-9208-bbb2a4f23ce0.png">
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 3 35 15 PM" src="https://user-images.githubusercontent.com/95029840/184364948-289849bf-cec5-46e3-8f83-e6412df219f3.png">
+
+
+
 
