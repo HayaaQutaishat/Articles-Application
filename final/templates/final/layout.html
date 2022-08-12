@@ -30,9 +30,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'new_article' %}">Create an Article.</a>
                 </li>
+                
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'read_later' %}">Read Later.</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><strong>{{ user.username }}</strong></a>
+            </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Log Out.</a>
                 </li>

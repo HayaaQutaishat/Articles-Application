@@ -138,7 +138,6 @@ def search(request):
 def author(request, user):
     user = User.objects.get(username=user)
     user_profile = Profile.objects.get(user=user)
-    print(user_profile.about)
     user_articles = user.articles.all()
     return render(request, "final/author.html", {
         "user_articles": user_articles,
@@ -170,7 +169,6 @@ def rating(request):
 def read_later(request):
     user = request.user
     user_articles = user.read_later.all()
-    print(user_articles)
     return render(request, "final/read_later.html", {
         "user_articles": user_articles
     })
@@ -182,6 +180,8 @@ def read_later_add(request, article_id):
             article = Article.objects.get(pk=article_id)
             user = request.user
             user.read_later.add(article)
+            messages.success(request, 'Article successfully added to your Read Later.')
+            return HttpResponseRedirect(reverse("read_later"))
         return render(request, "final/read_later.html")
 
 @login_required
@@ -190,6 +190,8 @@ def read_later_remove(request, article_id):
             article = Article.objects.get(pk=article_id)
             user = request.user
             user.read_later.remove(article)
+            messages.success(request, 'Article successfully removed from your Read Later.')
+            return HttpResponseRedirect(reverse("read_later"))
         return render(request, "final/read_later.html")
 
 

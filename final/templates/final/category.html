@@ -18,14 +18,14 @@
         <div class="row">
             <div class="col-lg-6 mx-auto" onclick="this.querySelector('a').click(); return true;">
                 <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                    <h5 class="card-title">{{ article.title }}</h5>
-                    <p class="mb-0 mt-2 font-italic">{{ article.brief }}</p>
+                    <h5 class="card-title"><b>{{ article.title }}</b></h5>
+                    <p class="mb-0 mt-2 font-italic"><small>"{{ article.brief }}..."</small></p>
                     <footer class="blockquote-footer pt-4 mt-4 border-top">Written by
                         <cite title="Source Title">{{ article.author }}</cite>
                         <br>
                         <cite title="Source Title">{{ article.date }}</cite>
                         <br>
-                        <a  class="text-decoration-none text-dark" href="{% url 'article' article.id %}">Click here to read more →</a>
+                        <a  class="text-decoration-none text-dark" href="{% url 'article' article.id %}"><mark>Click here to read more →</mark></a>
                     </footer>
                 </blockquote>
             </div>

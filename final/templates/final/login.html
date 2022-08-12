@@ -5,9 +5,14 @@
 
     <h2>Login</h2>
 
-    {% if message %}
-        <div>{{ message }}</div>
-    {% endif %}
+{% for message in messages %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{ message }}</strong> 
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>   
+{% endfor %}
 
     <form action="{% url 'login' %}" method="post">
         {% csrf_token %}
@@ -20,6 +25,10 @@
         <input class="btn btn-primary" type="submit" value="Login">
     </form>
 
-    Don't have an account? <a href="{% url 'register' %}">Register here.</a>
+    Don't have an account? <a href="{% url 'register' %}">Register here.</a> -->
+
+    
+
+    
 
 {% endblock %}
