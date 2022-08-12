@@ -76,7 +76,7 @@ This page informs the computer or website that the current user wishes to end th
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
 
--If the current logged in user is the author of the article which means he is the user who created that article, he can delete the article by pressing on "Delete" button. Clicking on that button will show a pop-up window created with bootstrap Modal.
+-If the current logged in user is the author of the article which means he is the user who created that article, he can delete the article by pressing on "Delete" button. Clicking on that button will show a pop-up window created with bootstrap Modal to make sure that the user really wants to delete that article.
 
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 3 44 22 PM" src="https://user-images.githubusercontent.com/95029840/184366824-3c58f433-f4fd-453e-8062-d4c3f63ba1c2.png">
