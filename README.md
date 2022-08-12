@@ -71,7 +71,7 @@ This page informs the computer or website that the current user wishes to end th
 
 <img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
 
--Also, logged in users can add comments on articles. Besides, each user can edit his comment and save it, then the new comment will appear in the page.
+-Also, logged in users can add comments on articles. Besides, each user can edit his comment. When a user clicks “Edit” for one of their own comments, the content of their comment should be replaced with a textarea where the user can edit the content of their comment. Then, the user should then be able to “Save” the edited comment, then the new comment will appear in the page.
 
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 5 12 00 PM" src="https://user-images.githubusercontent.com/95029840/184386190-617e0c7f-3f86-4760-9624-af203342dd96.png">
