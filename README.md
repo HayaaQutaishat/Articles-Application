@@ -68,9 +68,11 @@ This page informs the computer or website that the current user wishes to end th
 
 -Only logged in users will have the ability to press "Add to Read Later" button which will allow them to add this article to "Read Later" page so they can find it easily later and read it at any time.
 
+
 <img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
 
 -Also, logged in users can add comments on articles. Besides, each user can edit his comment and save it, then the new comment will appear in the page.
+
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
 
