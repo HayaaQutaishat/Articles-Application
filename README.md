@@ -59,14 +59,20 @@ This page informs the computer or website that the current user wishes to end th
 
 -If the user is interested in some articles, he can click at the article at any place in the card, and he will be redirected to the full article page.
 
-<img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184349610-eccd3257-1515-4b38-8547-d55420b215dc.png">
 
+<img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184350596-7044017e-f395-4d4f-9b3a-76398faa9f42.png">
 
 ### Article Page :
 
 -In the article page, the user will be able to see all the details about one article, such as the title, author, publish date, category of that article, and the entire text of the article.
 
 -Only logged users will have the ability to press "Add to Read Later" button which will allow them to add this article to "Read Later" page so they can find it easily later and read it at any time.
+
+<img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184350504-efe9dde3-a329-4cbe-aa5f-45516da7eca5.png">
+
+
 
 -Rating part (Not done yet)
 
