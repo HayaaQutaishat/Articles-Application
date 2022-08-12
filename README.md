@@ -81,3 +81,14 @@ This page informs the computer or website that the current user wishes to end th
 ### Read Later Page :
 
 -In this page, users can see all the articles they added to be read later. So this will make it very easy to remember which articles they are interested in. 
+
+
+### Author Page :
+
+-This page shows some information about all authors in the website. Informations like the name of the author, short summary about him and all the articles that he published. 
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 2 47 58 PM" src="https://user-images.githubusercontent.com/95029840/184357882-dfce6ebd-bc8a-46e9-b570-a15c2ae88331.png">
+
+
+
+
