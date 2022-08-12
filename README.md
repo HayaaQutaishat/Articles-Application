@@ -50,6 +50,8 @@ This page informs the computer or website that the current user wishes to end th
 
 -This page shows all the topics in the website. (Health, Environmental Issues, Food, Animals and Art). Each category contains number of articles related to the topic. Clicking on any of those categories will take the user to a new page which has all the related articles.
 
+<img width="1440" alt="Screen Shot 2022-08-12 at 1 56 13 PM" src="https://user-images.githubusercontent.com/95029840/184349345-d80537bd-bbfb-46d6-adef-066155d3958f.png">
+
 
 ### Articles Page :
 
