@@ -70,8 +70,7 @@ This page informs the computer or website that the current user wishes to end th
 
 <img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
 
-<img width="1440" alt="Screen Shot 2022-08-12 at 1 58 46 PM" src="https://user-images.githubusercontent.com/95029840/184350504-efe9dde3-a329-4cbe-aa5f-45516da7eca5.png">
-
+<img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
 
 
 -Rating part (Not done yet)
