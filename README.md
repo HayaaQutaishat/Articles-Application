@@ -74,6 +74,10 @@ This page informs the computer or website that the current user wishes to end th
 -Also, logged in users can add comments on articles. Besides, each user can edit his comment and save it, then the new comment will appear in the page.
 
 
+<img width="1440" alt="Screen Shot 2022-08-12 at 5 12 00 PM" src="https://user-images.githubusercontent.com/95029840/184386190-617e0c7f-3f86-4760-9624-af203342dd96.png">
+
+
+
 <img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
 
 -If the current logged in user is the author of the article which means he is the user who created that article, he can delete the article by pressing on "Delete" button. Clicking on that button will show a pop-up window created with bootstrap Modal to make sure that the user really wants to delete that article.
