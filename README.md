@@ -92,7 +92,10 @@ This page informs the computer or website that the current user wishes to end th
 <img width="1440" alt="Screen Shot 2022-08-12 at 3 44 22 PM" src="https://user-images.githubusercontent.com/95029840/184366824-3c58f433-f4fd-453e-8062-d4c3f63ba1c2.png">
 
 
--Rating part (Not done yet)
+-This page also has a system of one to five stars for articles ratings, with five stars being the highest rating. Logged users have the ability to rate articles by clicking on any the star that represent their rating. When they rate the article the follwoing message will be shown under the rating system.
+
+
+<img width="1440" alt="Screen Shot 2022-08-16 at 1 36 32 PM" src="https://user-images.githubusercontent.com/95029840/184871355-0e87ff35-b470-46bb-ad50-8ee611b41c2a.png">
 
 
 ### Read Later Page :
