@@ -126,6 +126,12 @@ This page informs the computer or website that the current user wishes to end th
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 3 35 15 PM" src="https://user-images.githubusercontent.com/95029840/184364948-289849bf-cec5-46e3-8f83-e6412df219f3.png">
 
+### Mobile Responsive :
+
+-This web application is mobile responsive application, it's content automatically changes to fit the device you're reading it on. 
+-Mobile responsive websites provide the best possible user experience. 
+
+<img width="644" alt="Screen Shot 2022-08-16 at 4 58 42 PM" src="https://user-images.githubusercontent.com/95029840/184912171-74c35ee2-25c7-4ef1-9c42-af1d67646e6a.png">
 
 
 
