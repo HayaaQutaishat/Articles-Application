@@ -171,7 +171,7 @@ blockquote:hover {
     border: 0 !important;
 }
 
-.this:hover::after {
+.tool_tip:hover::after {
     content: attr(data-tooltip);
     height: 30px;
     width: max-content;
@@ -184,4 +184,5 @@ blockquote:hover {
     color: white;
     text-align: center;
 }
+
 

@@ -37,6 +37,7 @@
         {% endif %}
             <br>
             {% if user.is_authenticated %}
+            <!-- Rating form -->
                 <form class="rate-form" action="" method="post" id="{{ article.id }}">
                     {% csrf_token %}
                     <button type="submit" class="fa fa-star my_btn" id="first"></button>
@@ -45,7 +46,10 @@
                     <button type="submit" class="fa fa-star my_btn" id="fourth"></button>
                     <button type="submit" class="fa fa-star my_btn" id="fifth"></button>
                 </form>
-        {% endif %}
+          {% else %}
+          <p>You must be logged in to add a rating on this article. <a href="{% url 'login' %}">Log in</a></p>
+          {% endif %}
+          <div id="confirm-rating"></div>
         <hr id="hr">
         <p id="article_text"> {{ article.text }} </p>
         <hr>

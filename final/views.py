@@ -151,20 +151,6 @@ def random(request):
         "random_article": random_article
     })
 
-def rating(request):
-    if request.method != "POST":
-        return JsonResponse({"error": "POST request required."}, status=400)
-    # Check the data
-    data = json.loads(request.body)
-    id = data.get("id", "")
-    article = Article.objects.get(pk=id)
-    user = request.user
-    score = data.get("score", "")
-    rating = Rating.create(user=user, article=article, score=score)
-    rating.save()
-    return JsonResponse({"scroe": score }, status=201)
-
-
 @login_required
 def read_later(request):
     user = request.user
@@ -228,5 +214,23 @@ def delete_article(request, article_id):
     article.delete()
     messages.success(request, 'Article successfully deleted.')
     return HttpResponseRedirect(reverse("category", args=(category_id,)))
+
+
+@login_required
+def rating(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "POST request required."}, status=400)
+    # Check the data
+    data = json.loads(request.body)
+    id = data.get("id", "")
+    article = Article.objects.get(pk=id)
+    user = request.user
+    score = data.get("score", "")
+    obj = Rating.objects.get(id=id)
+    print(obj)
+    
+    rating = Rating.create(user=user, article=article, score=score)
+    rating.save()
+    return JsonResponse({"scroe": score }, status=201)
 
 

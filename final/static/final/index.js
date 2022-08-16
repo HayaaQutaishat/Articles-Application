@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const four = document.querySelector('#fourth')
     const five = document.querySelector('#fifth')
     const form = document.querySelector('.rate-form')
+    const confirmBox = document.getElementById('confirm-rating')
 
     const handleSelection = (selection) => {
         switch(selection) {
@@ -83,10 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault()
             // grab the id of the rated article 
             const id = e.target.id
-            // console.log(id)
+            console.log(id)
             // grab the id of the score of the article
             const score = getNumericValue(val);
-            // console.log(score)
+            console.log(score)
             fetch('/rating', {
                 method: 'POST',
                 body: JSON.stringify({
@@ -96,14 +97,12 @@ document.addEventListener('DOMContentLoaded', function() {
               })
               .then(response => response.json())
               .then(result => {
-                  console.log(result);
+                //   console.log(result);
+                confirmBox.innerHTML = `<p><mark>Successfully rated with ${score} star(s)!</mark></p>`
               });
         })
     }))
 
-
-
-    
     const edit_btns = document.querySelectorAll('.edit_btn')
     edit_btns.forEach(btn => {
         btn.addEventListener('click', (event)=>{
