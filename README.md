@@ -28,9 +28,14 @@ This web application is not similar to anything we have already worked on. It's 
 
 This is the entry page to the website that requires user identification and authentication, regularly performed by entering a username and password combination.
 
+<img width="1440" alt="Screen Shot 2022-08-16 at 2 50 56 PM" src="https://user-images.githubusercontent.com/95029840/184884014-12d23310-f2d8-440c-82a1-89b93c52f0f3.png">
+
 ### Register Page :
 
 This signup page (also known as a registration page) enables users and organizations to independently register and gain access to your system. 
+
+<img width="1439" alt="Screen Shot 2022-08-16 at 2 52 05 PM" src="https://user-images.githubusercontent.com/95029840/184884129-c3e19006-b68b-4df1-baa9-77890fd11b99.png">
+
 
 ### Logout Page :
 
