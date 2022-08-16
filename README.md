@@ -129,3 +129,13 @@ This page informs the computer or website that the current user wishes to end th
 
 
 
+## Setup :
+
+Requires Python3 and the package installer for Python (pip) to run:
+
+- Create new migrations based on the changes in models: python3 manage.py makemigrations
+- Apply the migrations to the database: python3 manage.py migrate
+- Create a superuser to be able to use Django Admin Interface: python3 manage.py createsuperuser
+- Run the app locally: python3 manage.py runserver
+- Visit the site: http://localhost:8000
+
