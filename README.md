@@ -46,7 +46,7 @@ This page informs the computer or website that the current user wishes to end th
 
 -There's no need to be logged in in order to do those actions. 
 
--I also added some Tooltips With Only CSS, using data attribute. 
+-I also added some Tooltips With Only CSS, using data attribute. So when the user hover on the "Search Icon", the following text will pop-up.
 
 
 <img width="1440" alt="Screen Shot 2022-08-16 at 10 58 29 AM" src="https://user-images.githubusercontent.com/95029840/184840970-a6d80467-dd73-4825-bd6b-455c26ef6ae5.png">
