@@ -131,10 +131,12 @@ This page informs the computer or website that the current user wishes to end th
 -This web application is mobile responsive application, it's content automatically changes to fit the device you're reading it on. 
 -Mobile responsive websites provide the best possible user experience. 
 
--The following pictures shows a screenshots from different pages in this web application to show that it is a mobile repsonsive app.
+-The following pictures shows a screenshots from different pages in this web application to show that it is a mobile repsonsive app:
+ - The home page:
 
 <img width="644" alt="Screen Shot 2022-08-16 at 4 58 42 PM" src="https://user-images.githubusercontent.com/95029840/184912171-74c35ee2-25c7-4ef1-9c42-af1d67646e6a.png">
 
+- Create New Article Page:
 
 <img width="892" alt="Screen Shot 2022-08-16 at 6 37 59 PM" src="https://user-images.githubusercontent.com/95029840/184933146-f7ebfe2c-8659-4fe3-add3-d7e23d48c61c.png">
 
