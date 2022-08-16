@@ -2,16 +2,6 @@
 {% load static %}
 
 {% block body %}
-
-{% for message in messages %}
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>{{ message }}</strong> 
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>   
-{% endfor %}
-
 <!-- Create New Article -->
    <div id="new_article_container">
         <div id="new_article_div">
@@ -30,7 +20,7 @@
                 <textarea name="brief" placeholder="Write your brief here." class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;" ></textarea><br> 
                 <label for="form_name">Article</label>
                 <textarea name="text" id="form_message" name="message" class="form-control" placeholder="Write your article here." rows="4" required="required"></textarea><br> 
-                <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Create New Article" >               
+                <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Share New Article" >               
             </form>
         </div>
    </div>
