@@ -40,11 +40,17 @@ This page informs the computer or website that the current user wishes to end th
 
 -In this page, you can search text in title of articles by input any word in the center input box, and click "Search" button.
 
+<img width="1440" alt="im1" src="https://user-images.githubusercontent.com/95029840/184348451-745b9a42-c786-434c-9630-de065f73860a.png">
+
 -In addition, if you just want to read something new, just click "Random Article" button on the top, and you will get some articles randomly. 
 
 -There's no need to be logged in in order to do those actions. 
 
-<img width="1440" alt="im1" src="https://user-images.githubusercontent.com/95029840/184348451-745b9a42-c786-434c-9630-de065f73860a.png">
+-I also added some Tooltips With Only CSS, using data attribute. 
+
+
+<img width="1440" alt="Screen Shot 2022-08-16 at 10 58 29 AM" src="https://user-images.githubusercontent.com/95029840/184840970-a6d80467-dd73-4825-bd6b-455c26ef6ae5.png">
+
 
 ### Categories Page :
 
