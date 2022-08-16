@@ -139,3 +139,7 @@ Requires Python3 and the package installer for Python (pip) to run:
 - Run the app locally: python3 manage.py runserver
 - Visit the site: http://localhost:8000
 
+
+## Topics :
+
+Built with Python, Django, HTML, CSS, and Javascript.
