@@ -40,11 +40,17 @@ This page informs the computer or website that the current user wishes to end th
 
 -In this page, you can search text in title of articles by input any word in the center input box, and click "Search" button.
 
+<img width="1440" alt="im1" src="https://user-images.githubusercontent.com/95029840/184348451-745b9a42-c786-434c-9630-de065f73860a.png">
+
 -In addition, if you just want to read something new, just click "Random Article" button on the top, and you will get some articles randomly. 
 
 -There's no need to be logged in in order to do those actions. 
 
-<img width="1440" alt="im1" src="https://user-images.githubusercontent.com/95029840/184348451-745b9a42-c786-434c-9630-de065f73860a.png">
+-I also added some Tooltips With Only CSS, using data attribute. So when the user hover on the "Search Icon", the following text will pop-up.
+
+
+<img width="1440" alt="Screen Shot 2022-08-16 at 10 58 29 AM" src="https://user-images.githubusercontent.com/95029840/184840970-a6d80467-dd73-4825-bd6b-455c26ef6ae5.png">
+
 
 ### Categories Page :
 
@@ -71,7 +77,11 @@ This page informs the computer or website that the current user wishes to end th
 
 <img width="1427" alt="Screen Shot 2022-08-12 at 2 00 30 PM" src="https://user-images.githubusercontent.com/95029840/184350490-30654eb7-54ac-48e0-a08b-20aef46200e1.png">
 
--Also, logged in users can add comments on articles. Besides, each user can edit his comment and save it, then the new comment will appear in the page.
+-Also, logged in users can add comments on articles. Besides, each user can edit his comment. When a user clicks “Edit” for one of their own comments, the content of their comment should be replaced with a textarea where the user can edit the content of their comment. Then, the user should then be able to “Save” the edited comment, then the new comment will appear in the page.
+
+
+<img width="1440" alt="Screen Shot 2022-08-12 at 5 12 00 PM" src="https://user-images.githubusercontent.com/95029840/184386190-617e0c7f-3f86-4760-9624-af203342dd96.png">
+
 
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 2 10 28 PM" src="https://user-images.githubusercontent.com/95029840/184351314-eae45bf9-0a6d-476a-8d30-ce15b151abe0.png">
