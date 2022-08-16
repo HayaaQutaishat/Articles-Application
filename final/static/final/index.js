@@ -7,13 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const five = document.querySelector('#fifth')
     const form = document.querySelector('.rate-form')
 
-    // Bootstrap Modal (Popup)
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
-    myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus()
-    })
-
     const handleSelection = (selection) => {
         switch(selection) {
             case 'first': {
@@ -108,6 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }))
 
+
+
     
     const edit_btns = document.querySelectorAll('.edit_btn')
     edit_btns.forEach(btn => {
@@ -160,5 +155,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             return false; 
           }
+        // Bootstrap Modal (Popup)
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
     })
 

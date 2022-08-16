@@ -76,7 +76,7 @@
                         {% if user.is_authenticated and user == comment.user %}
                         <form action="" method="post">
                             {% csrf_token %}
-                            <button id="{{ comment.id }}" type="submit" class="btn btn-secondary btn-sm edit_btn">Edit</button>
+                            <button id="{{ comment.id }}" type="button" class="btn btn-secondary btn-sm edit_btn">Edit</button>
                         </form>
                         {% endif %}
                         </span> 
