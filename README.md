@@ -28,9 +28,14 @@ This web application is not similar to anything we have already worked on. It's 
 
 This is the entry page to the website that requires user identification and authentication, regularly performed by entering a username and password combination.
 
+<img width="1440" alt="Screen Shot 2022-08-16 at 2 50 56 PM" src="https://user-images.githubusercontent.com/95029840/184884014-12d23310-f2d8-440c-82a1-89b93c52f0f3.png">
+
 ### Register Page :
 
 This signup page (also known as a registration page) enables users and organizations to independently register and gain access to your system. 
+
+<img width="1439" alt="Screen Shot 2022-08-16 at 2 52 05 PM" src="https://user-images.githubusercontent.com/95029840/184884129-c3e19006-b68b-4df1-baa9-77890fd11b99.png">
+
 
 ### Logout Page :
 
@@ -92,7 +97,10 @@ This page informs the computer or website that the current user wishes to end th
 <img width="1440" alt="Screen Shot 2022-08-12 at 3 44 22 PM" src="https://user-images.githubusercontent.com/95029840/184366824-3c58f433-f4fd-453e-8062-d4c3f63ba1c2.png">
 
 
--Rating part (Not done yet)
+-This page also has a system of one to five stars for articles ratings, with five stars being the highest rating. Logged users have the ability to rate articles by clicking on any the star that represent their rating. When they rate the article the follwoing message will be shown under the rating system.
+
+
+<img width="1440" alt="Screen Shot 2022-08-16 at 1 36 32 PM" src="https://user-images.githubusercontent.com/95029840/184871355-0e87ff35-b470-46bb-ad50-8ee611b41c2a.png">
 
 
 ### Read Later Page :
@@ -117,6 +125,32 @@ This page informs the computer or website that the current user wishes to end th
 <img width="1440" alt="Screen Shot 2022-08-12 at 3 28 42 PM" src="https://user-images.githubusercontent.com/95029840/184363780-cfe2f78e-a05a-4a69-9208-bbb2a4f23ce0.png">
 
 <img width="1440" alt="Screen Shot 2022-08-12 at 3 35 15 PM" src="https://user-images.githubusercontent.com/95029840/184364948-289849bf-cec5-46e3-8f83-e6412df219f3.png">
+
+
+
+
+## Setup :
+
+Requires Python3 and the package installer for Python (pip) to run:
+
+- Create new migrations based on the changes in models: python3 manage.py makemigrations
+- Apply the migrations to the database: python3 manage.py migrate
+- Create a superuser to be able to use Django Admin Interface: python3 manage.py createsuperuser
+- Run the app locally: python3 manage.py runserver
+- Visit the site: http://localhost:8000
+
+
+## Topics :
+
+Built with Python, Django, HTML, CSS, Javascript and Bootstrap.
+
+
+## Django administration :
+
+- This application has 5 models in addition to the User model: one for categories, one for articles, one for authors profile page , one for comments and one for ratings made on articles.
+
+<img width="1440" alt="Screen Shot 2022-08-16 at 3 09 07 PM" src="https://user-images.githubusercontent.com/95029840/184887996-3cb349cd-013e-4b5a-a539-872b9e510a71.png">
+
 
 
 
