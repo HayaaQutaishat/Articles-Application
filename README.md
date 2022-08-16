@@ -147,10 +147,11 @@ Built with Python, Django, HTML, CSS, Javascript and Bootstrap.
 
 ## Django administration :
 
+- This application has 5 models in addition to the User model: one for categories, one for articles, one for authors profile page , one for comments and one for ratings made on articles.
+
 <img width="1440" alt="Screen Shot 2022-08-16 at 3 09 07 PM" src="https://user-images.githubusercontent.com/95029840/184887996-3cb349cd-013e-4b5a-a539-872b9e510a71.png">
 
-- Models: 
-This application has 5 models in addition to the User model: one for categories, one for articles, one for authors profile page , one for comments and one for ratings made on articles.
+
 
 
 
