@@ -140,6 +140,10 @@ This page informs the computer or website that the current user wishes to end th
 
 <img width="892" alt="Screen Shot 2022-08-16 at 6 37 59 PM" src="https://user-images.githubusercontent.com/95029840/184933146-f7ebfe2c-8659-4fe3-add3-d7e23d48c61c.png">
 
+- Register Page:
+
+<img width="932" alt="Screen Shot 2022-08-16 at 6 42 42 PM" src="https://user-images.githubusercontent.com/95029840/184933786-375659e6-2feb-4195-b67b-ef406123bd17.png">
+
 
 ## Setup :
 
