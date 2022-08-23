@@ -145,6 +145,18 @@ This page informs the computer or website that the current user wishes to end th
 <img width="932" alt="Screen Shot 2022-08-16 at 6 42 42 PM" src="https://user-images.githubusercontent.com/95029840/184933786-375659e6-2feb-4195-b67b-ef406123bd17.png">
 
 
+### Files Information :
+
+- In views.py there is all of the backend code. The main functions are:
+  - Login view: If you have an authenticated user you want to attach to the current session - this is done with a login() function. To log a user in, from a view, use login() . It takes an HttpRequest object and a User object. login() saves the user's ID in the session, using Django's session framework.
+  - Logout view: Logging out informs the website that the current user wishes to end the login session.
+  - register view: This view enables users and organizations to independently register and gain access to your system.
+  - categories view: This view brings all categories from database, (Health, Environmental Issues, Food, Animals and Art).Each category contains number of articles related to the topic. 
+  - category view: This view brings all the articles related to the clicked category from the database using get() QuerySet method and render them to the user.
+
+
+
+
 ## Setup :
 
 Requires Python3 and the package installer for Python (pip) to run:
