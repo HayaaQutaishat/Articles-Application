@@ -152,8 +152,9 @@ This page informs the computer or website that the current user wishes to end th
   - Logout view: Logging out informs the website that the current user wishes to end the login session.
   - register view: This view enables users and organizations to independently register and gain access to your system.
   - categories view: This view brings all categories from database, (Health, Environmental Issues, Food, Animals and Art).Each category contains number of articles related to the topic. 
-  - category view: This view brings all the articles related to the clicked category from the database using get() QuerySet method and render them to the user.
-
+  - category view: This view brings all the articles related to the clicked category from the database  in reverse chronological order using get() QuerySet method and render them to the user.
+  - article view: This view brings the article object from the database so users can see all details about this article using this article object methods and properties. 
+  - new article view:
 
 
 
