@@ -163,6 +163,13 @@ This page informs the computer or website that the current user wishes to end th
   - edit_comment view: This view grabs user's input when click on edit button, and update the databse by the new comment text that the user typed. 
   - delete_article view: This view allow users to delete article objects from database using delete() method. 
   - rating view: This view allow users to rate an article and add this rate to tha database.
+- models.py:
+  - User model: It's a custom user model (a subclass) of the AbstractUser model. 
+  - Categories model: It contains image and type fields. 
+  - Article model: It contains title, author, brief, text, date, category, read_later fields. It also contains @classmethod decorator which is an expression that gets evaluated after your function is defined. In this case I'm using this @classmethod to create article objects and save them to the database. 
+  - Comment model: It contains comment, article, user and time fields. It also contains @classmethod decorator in order to create comment objects and save them to the database.
+  - Profile model: It contains user and about fields.
+  - Rating model: It contains user, article and score fields. It also contains @classmethod decorator in order to create rating objects and save them to the database. 
 
 
 ## Setup :
