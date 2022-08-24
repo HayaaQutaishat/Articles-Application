@@ -175,6 +175,8 @@ This page informs the computer or website that the current user wishes to end th
   - styles.css file: This css file contains all of the css used to style this web application. Techniques like flexbox and grid are used. This file stores all the style informations that all the pages share to create a great user experience.
   - index.js file: This file adds a dynamic and interactive elements to all webpages. This file contains all the functions that I want to include on each of this site's webpages. This file also use fetch() method to send asynchronous requests to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON.
 
+- Other less important files like urls, admin, settings. 
+
 ## Setup :
 
 Requires Python3 and the package installer for Python (pip) to run:
