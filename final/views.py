@@ -205,7 +205,6 @@ def edit_comment(request):
     comment.save()
     return JsonResponse({"data": data}, status=201)
 
-
 @login_required
 def delete_article(request, article_id):
     article = Article.objects.get(pk=article_id)

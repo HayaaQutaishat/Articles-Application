@@ -3,27 +3,38 @@
 
 {% block body %}
 <!-- Create New Article -->
-   <div id="new_article_container">
-        <div id="new_article_div">
-            <h3>Create New Article</h3> 
-            <form action="{% url 'new_article' %}" method="post">
-                {% csrf_token %}
-                <label for="form_need">Please Select Your Article Category</label>
-                <select id="form_need" name="category" class="form-control" required="required" data-error="Please specify your need.">
-                    {% for option in options %}
-                        <option value="{{ option.id }}">{{ option }}</option>             
-                    {% endfor %}
-                </select><br>
-                <label for="form_name">Title</label>
-                <input type="text" name="title" class="form-control" placeholder="Title." required="required" data-error="Title is required."><br>  
-                <label for="form_name">Brief</label>
-                <textarea name="brief" placeholder="Write your brief here." class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:100%;" ></textarea><br> 
-                <label for="form_name">Article</label>
-                <textarea name="text" id="form_message" name="message" class="form-control" placeholder="Write your article here." rows="4" required="required"></textarea><br> 
-                <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Share New Article" >               
-            </form>
-        </div>
-   </div>
+<div id="new_article_container">
+    <div id="new_article_div">
+        <h3>Create New Article</h3> 
+   <form action="{% url 'new_article' %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Please Select Your Article Category</label>
+        <select id="exampleFormControlSelect1" name="category" class="form-control" required="required" data-error="Please specify your need.">
+            {% for option in options %}
+                <option value="{{ option.id }}">{{ option }}</option>             
+            {% endfor %}
+        </select><br>
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Title</label>
+      <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title." required="required" data-error="Title is required."><br>  
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Brief</label>
+      <textarea name="brief" id="exampleFormControlTextarea1" placeholder="Write your brief here." class="form-control" rows="3"></textarea><br> 
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Article</label>
+        <textarea name="text" id="exampleFormControlTextarea1" name="brief" class="form-control" placeholder="Write your article here." rows="4" required="required"></textarea><br> 
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Share New Article" >               
+      </div>
+  </form>
+</div>
+</div>
+
 
 {% endblock %}
 {% block script %}
