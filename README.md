@@ -173,7 +173,7 @@ This page informs the computer or website that the current user wishes to end th
  
 - Static files: 
   - styles.css file: This css file contains all of the css used to style this web application. Techniques like flexbox and grid are used. This file stores all the style informations that all the pages share to create a great user experience.
-  - index.js file:
+  - index.js file: This file adds a dynamic and interactive elements to all webpages. This file contains all the functions that I want to include on each of this site's webpages. This file also use fetch() method to send asynchronous requests to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON.
 
 ## Setup :
 
