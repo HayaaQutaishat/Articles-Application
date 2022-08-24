@@ -177,6 +177,12 @@ This page informs the computer or website that the current user wishes to end th
 
 - Other less important files like urls, admin, settings. 
 
+## Distinctiveness and Complexity:
+
+The page is not similar to anything we have already created. It's not a social media app nor an e-commerce. It's not similar to other years projects either.
+
+In terms of complexity, I used Django with more than one model (explained above) and javascript to the frontend. Moreover, all of the web application is mobile responsive. 
+
 ## Setup :
 
 Requires Python3 and the package installer for Python (pip) to run:
