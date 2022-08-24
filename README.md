@@ -170,7 +170,10 @@ This page informs the computer or website that the current user wishes to end th
   - Comment model: It contains comment, article, user and time fields. It also contains @classmethod decorator in order to create comment objects and save them to the database.
   - Profile model: It contains user and about fields.
   - Rating model: It contains user, article and score fields. It also contains @classmethod decorator in order to create rating objects and save them to the database. 
-
+ 
+- Static files: 
+  - styles.css file: This css file contains all of the css used to style this web application. Techniques like flexbox and grid are used. This file stores all the style informations that all the pages share to create a great user experience.
+  - index.js file:
 
 ## Setup :
 
