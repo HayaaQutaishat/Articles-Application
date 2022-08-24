@@ -131,9 +131,57 @@ This page informs the computer or website that the current user wishes to end th
 -This web application is mobile responsive application, it's content automatically changes to fit the device you're reading it on. 
 -Mobile responsive websites provide the best possible user experience. 
 
+-The following pictures shows a screenshots from different pages in this web application to show that it is a mobile repsonsive app:
+ - The home page:
+
 <img width="644" alt="Screen Shot 2022-08-16 at 4 58 42 PM" src="https://user-images.githubusercontent.com/95029840/184912171-74c35ee2-25c7-4ef1-9c42-af1d67646e6a.png">
 
+- Create New Article Page:
 
+<img width="892" alt="Screen Shot 2022-08-16 at 6 37 59 PM" src="https://user-images.githubusercontent.com/95029840/184933146-f7ebfe2c-8659-4fe3-add3-d7e23d48c61c.png">
+
+- Register Page:
+
+<img width="932" alt="Screen Shot 2022-08-16 at 6 42 42 PM" src="https://user-images.githubusercontent.com/95029840/184933786-375659e6-2feb-4195-b67b-ef406123bd17.png">
+
+
+### Files Information :
+
+- In views.py there is all of the backend code. The main functions are:
+  - Login view: If you have an authenticated user you want to attach to the current session - this is done with a login() function. To log a user in, from a view, use login() . It takes an HttpRequest object and a User object. login() saves the user's ID in the session, using Django's session framework.
+  - Logout view: Logging out informs the website that the current user wishes to end the login session.
+  - register view: This view enables users and organizations to independently register and gain access to your system.
+  - categories view: This view brings all categories from database, (Health, Environmental Issues, Food, Animals and Art).Each category contains number of articles related to the topic. 
+  - category view: This view brings all the articles related to the clicked category from the database  in reverse chronological order using get() QuerySet method and render them to the user.
+  - article view: This view brings the article object from the database so users can see all details about this article using this article object methods and properties. 
+  - new_article view: This view create new article object using create() method, and save it to the database using save() method. 
+  - search view: This view searches some data in the database with user input in the search form.
+  - author view: This view brings author object from database and render all details of this object to the user. 
+  - random view: This view returns articles in which the words appear in title or description.
+  - read_later_add view: This view adds the article that the user clicked on its "Add To Read Later" button to the list of read later for that user and update the database. 
+  - read_later_remove view: This view removes the article that the user clicked on its "Add To Read Later" button to the list of read later for that user and update the database.
+  - edit_comment view: This view grabs user's input when click on edit button, and update the databse by the new comment text that the user typed. 
+  - delete_article view: This view allow users to delete article objects from database using delete() method. 
+  - rating view: This view allow users to rate an article and add this rate to tha database.
+- models.py:
+  - User model: It's a custom user model (a subclass) of the AbstractUser model. 
+  - Categories model: It contains image and type fields. 
+  - Article model: It contains title, author, brief, text, date, category, read_later fields. It also contains @classmethod decorator which is an expression that gets evaluated after your function is defined. In this case I'm using this @classmethod to create article objects and save them to the database. 
+  - Comment model: It contains comment, article, user and time fields. It also contains @classmethod decorator in order to create comment objects and save them to the database.
+  - Profile model: It contains user and about fields.
+  - Rating model: It contains user, article and score fields. It also contains @classmethod decorator in order to create rating objects and save them to the database. 
+ 
+- Static files: 
+  - styles.css file: This css file contains all of the css used to style this web application. Techniques like flexbox and grid are used. This file stores all the style informations that all the pages share to create a great user experience.
+  - index.js file: This file adds a dynamic and interactive elements to all webpages. This file contains all the functions that I want to include on each of this site's webpages. This file also use fetch() method to send asynchronous requests to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON.
+
+- Other less important files like urls, admin, settings. 
+
+## Distinctiveness and Complexity:
+
+The page is not similar to anything we have already created. It's not a social media app nor an e-commerce. It's not similar to other years projects either.
+
+In terms of complexity, I used Django with more than one model (explained above) and javascript to the frontend. Moreover, all of the web application is mobile responsive. 
 
 ## Setup :
 
@@ -158,6 +206,9 @@ Built with Python, Django, HTML, CSS, Javascript and Bootstrap.
 <img width="1440" alt="Screen Shot 2022-08-16 at 3 09 07 PM" src="https://user-images.githubusercontent.com/95029840/184887996-3cb349cd-013e-4b5a-a539-872b9e510a71.png">
 
 
+## Requirements:
+Python 3
+Pip (Python package manager)
 
 
 
