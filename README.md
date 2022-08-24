@@ -154,7 +154,13 @@ This page informs the computer or website that the current user wishes to end th
   - categories view: This view brings all categories from database, (Health, Environmental Issues, Food, Animals and Art).Each category contains number of articles related to the topic. 
   - category view: This view brings all the articles related to the clicked category from the database  in reverse chronological order using get() QuerySet method and render them to the user.
   - article view: This view brings the article object from the database so users can see all details about this article using this article object methods and properties. 
-  - new article view:
+  - new article view: This view create new article object using create() method, and save it to the database using save() method. 
+  - search view: This view searches some data in the database with user input in the search form.
+  - author view: This view brings author object from database and render all details of this object to the user. 
+  - random view: This view returns articles in which the words appear in title or description.
+  - read_later_add view: This view adds the article that the user clicked on its "Add To Read Later" button to the list of read later for that user and update the database. 
+  - read_later_remove view: This view removes the article that the user clicked on its "Add To Read Later" button to the list of read later for that user and update the database.
+  - 
 
 
 
