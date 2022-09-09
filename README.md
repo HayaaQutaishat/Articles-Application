@@ -224,6 +224,15 @@ Built with Python, Django, HTML, CSS, Javascript and Bootstrap.
 
 <img width="1440" alt="Screen Shot 2022-08-16 at 3 09 07 PM" src="https://user-images.githubusercontent.com/95029840/184887996-3cb349cd-013e-4b5a-a539-872b9e510a71.png">
 
+# Back End
+
+## Super User
+
+Super user is a feature provided by Django. The super user can manipulate all data in the Backend Management Dashboard.
+
+
+Super user can also view all the details of all users.
+
 
 ## Requirements:
 Python 3
