@@ -186,7 +186,9 @@ In terms of complexity, I used Django with more than one model (User, Categories
 Django supports relational databases and allows us to establish relations between different models. In my project I used three types of relational fields which Django supports: many-to-one, many-to-many and one-to-one.
 
 
-Additionally, I used javascript to the frontend and to create all the logic in this web application, also Javascript helped me make this web application pages more interactive.Besides, I used the Fetch() API method to allow to asynchronously HTTP request for a resource so I can retrieve data from a URL without having to do a full page refresh. The fetch() method returns a promise that resolves into a Response object, to get the actual data, I called one of the methods of the Response object (text() or json()). These methods resolve into the actual data.
+Additionally, I used javascript to the frontend and to create all the logic in this web application, also Javascript helped me make this web application pages more interactive and allows the screens to respond to clicks and keystrokes made by the user by using events and events handler.
+
+Besides, I used the Fetch() API method to allow to asynchronously HTTP request for a resource so I can retrieve data from a URL without having to do a full page refresh. The fetch() method returns a promise that resolves into a Response object, to get the actual data, I called one of the methods of the Response object (text() or json()). These methods resolve into the actual data.
 
 
 
