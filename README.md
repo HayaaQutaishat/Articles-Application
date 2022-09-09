@@ -187,21 +187,13 @@ Django supports relational databases which allows us to establish relations betw
 
 In some of my models I used @classmethod which is basically a method of a class having access to every attribute of the class it was called on. This method use cls, which should be the first argument of every class method. So a class method is a method that is bound to the class and not the object of the class. In my case I used it to create objects in my views.
 
-
-
 Additionally, I used javascript to the frontend and to create all the logic in this web application, also Javascript helped me make this web application pages more interactive and allows the screens to respond to clicks and keystrokes made by the user by using events and events handler.
 
 Besides, I used the Fetch() API method to allow to asynchronously HTTP request for a resource so I can retrieve data from a URL without having to do a full page refresh. The fetch() method returns a promise that resolves into a Response object, to get the actual data, I called one of the methods of the Response object (text() or json()). These methods resolve into the actual data.
+However, I wrote all my scripts in signel separate file (index.js) and I refered to it using the src attribute in the <script> tag.
 
 
-
-. Moreover, all of the web application is mobile responsive. Moreover,JavaScript allows the screens to respond to clicks and keystrokes made by the user, and to fetch data from remote computers, to change themselves spontaneously. 
- 
-  
-
-  - Uses Javascript functionality, in order to fetch data without reloading the current page by sending Asynchronous HTTP requests.
-  - Send password reset code using email.
-  - Completely Mobile responsive.
+Finally, all of the web application pages are completely mobile responsive, so that all the content of the page responds and adapts based on the size of screen they are presented on. 
 
 ## Setup :
 
