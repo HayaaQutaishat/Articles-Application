@@ -226,8 +226,10 @@ Built with Python, Django, HTML, CSS, Javascript and Bootstrap.
 ## Super User
 
 Super user is a feature provided by Django. The super user can manipulate all data in the Backend Management Dashboard.
+ 
+<img width="1431" alt="Screen Shot 2022-09-09 at 4 01 39 PM" src="https://user-images.githubusercontent.com/95029840/189368159-c9681e8f-6920-40ef-b8a1-9611e14fc04d.png">
 
-
+ 
 Super user can also view all the details of all users.
 
 
