@@ -192,8 +192,7 @@ Additionally, I used javascript to the frontend and to create all the logic in t
 Besides, I used the Fetch() API method to allow to asynchronously HTTP request for a resource so I can retrieve data from a URL without having to do a full page refresh. The fetch() method returns a promise that resolves into a Response object, to get the actual data, I called one of the methods of the Response object (text() or json()). These methods resolve into the actual data.
 However, I wrote all my scripts in signel separate file (index.js) and I refered to it using the src attribute in the <script> tag.
 
-
-Finally, all of the web application pages are completely mobile responsive, so that all the content of the page responds and adapts based on the size of screen they are presented on. 
+Finally, all of the web application pages are completely mobile responsive, so that all the content of the page automatically responds and adapts based on the size of screen they are presented on. 
 
 ## Setup :
 
