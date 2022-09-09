@@ -183,11 +183,14 @@ I believe this project satisfies all the distinctiveness and complexity requirem
 
 In terms of complexity, I used Django with more than one model (User, Categories, Article, Comment, Profile and Rating explained above in details) each model maps to a single database table, to define the structure of the stored data, including the field types and possibly also their maximum size and default values. 
 
+
+Django supports relational databases and allows us to establish relations between different models. In my project I used three types of relational fields which Django supports: many-to-one, many-to-many and one-to-one.
+
+
 and javascript to the frontend and the logic, also to make this web application more interactive.. Moreover, all of the web application is mobile responsive. Moreover,JavaScript allows the screens to respond to clicks and keystrokes made by the user, and to fetch data from remote computers, to change themselves spontaneously. 
  
   
 
- - More models with complex relation between them. I created 6 models (User, Categories, Article, Comment, Profile and Rating). 
   - Uses Javascript functionality, in order to fetch data without reloading the current page by sending Asynchronous HTTP requests.
   - Send password reset code using email.
   - Completely Mobile responsive.
