@@ -185,7 +185,7 @@ In terms of complexity, I used Django with more than one model (User, Categories
 
 Django supports relational databases which allows us to establish relations between different models. In my project I used all three types of relational fields which Django supports: many-to-one, many-to-many and one-to-one. 
 
-In some of my models I used @classmethod which is basically a method of a class having access to every attribute of the class it was called on. Therefore a class method is a method that is bound to the class and not the object of the class. In my case I used it to create objects in my views.
+In some of my models I used @classmethod which is basically a method of a class having access to every attribute of the class it was called on. This method use cls, which should be the first argument of every class method. So a class method is a method that is bound to the class and not the object of the class. In my case I used it to create objects in my views.
 
 
 
