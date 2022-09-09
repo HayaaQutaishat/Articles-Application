@@ -181,7 +181,10 @@ This page informs the computer or website that the current user wishes to end th
 
 I believe this project satisfies all the distinctiveness and complexity requirements as it is a platform for searching and reading new articles. It is not similar to anything we have already created in this course. It's not a social media app nor an e-commerce website. It's not similar to other years projects either.
 
-In terms of complexity, I used Django with more than one model (explained above) and javascript to the frontend and the logic, also to make this web application more interactive.. Moreover, all of the web application is mobile responsive. Moreover,JavaScript allows the screens to respond to clicks and keystrokes made by the user, and to fetch data from remote computers, to change themselves spontaneously. 
+In terms of complexity, I used Django with more than one model (User, Categories, Article, Comment, Profile and Rating explained above in details)
+
+
+and javascript to the frontend and the logic, also to make this web application more interactive.. Moreover, all of the web application is mobile responsive. Moreover,JavaScript allows the screens to respond to clicks and keystrokes made by the user, and to fetch data from remote computers, to change themselves spontaneously. 
  
   
 
