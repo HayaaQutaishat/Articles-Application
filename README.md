@@ -181,9 +181,11 @@ This page informs the computer or website that the current user wishes to end th
 
 I believe this project satisfies all the distinctiveness and complexity requirements as it is a platform for searching and reading new articles. It is not similar to anything we have already created in this course. It's not a social media app nor an e-commerce website. It's not similar to other years projects either.
 
-In terms of complexity, I used Django with more than one model (User, Categories, Article, Comment, Profile and Rating explained above in details) each model maps to a single database table, to define the structure of the stored data, including the field types and possibly also their maximum size and default values. 
+In terms of complexity, I used Django with more than one model (User, Categories, Article, Comment, Profile and Rating explained above in details) each model maps to a single database table, to define the structure of the stored data, including the field types and possibly also their maximum size and default values. All models are stored in models.py file. 
 
-Django supports relational databases and allows us to establish relations between different models. In my project I used three types of relational fields which Django supports: many-to-one, many-to-many and one-to-one.
+Django supports relational databases which allows us to establish relations between different models. In my project I used all three types of relational fields which Django supports: many-to-one, many-to-many and one-to-one. 
+
+
 
 
 Additionally, I used javascript to the frontend and to create all the logic in this web application, also Javascript helped me make this web application pages more interactive and allows the screens to respond to clicks and keystrokes made by the user by using events and events handler.
