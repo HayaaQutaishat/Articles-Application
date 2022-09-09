@@ -194,10 +194,8 @@ Additionally, I used javascript to the frontend and to create all the logic in t
 Besides, I used the Fetch() API method to allow to asynchronously HTTP request for a resource so I can retrieve data from a URL without having to do a full page refresh. The fetch() method returns a promise that resolves into a Response object, to get the actual data, I called one of the methods of the Response object (text() or json()). These methods resolve into the actual data.
 However, I wrote all my scripts in signel separate file (index.js) and I refered to it using the src attribute in the <script> tag.
  
-Furthermore, I implemented a simple five stars rating sytstem using Javascript in order to allow users to rate each article in the website. When the user hovers on any star, the color of that star will change to yellow. I used the switch statement which is used to perform different actions based on different conditions.
+Furthermore, I implemented a simple five stars rating sytstem using Javascript in order to allow users to rate each article in the website. When the user hovers on any star, the color of that star will change to yellow which means that star is activated. I used the switch statement which is used to perform different actions based on different conditions. I also created a model called Rating which has a user, article and score fields. The score field has a maximum value validator of 5 and minimum value validator of 0. I also used @classmethod to create rating objects in store them in the database by applying save() method on that new object.
  
- 
- clicks on the star,
 
 Finally, all of the web application pages are completely mobile responsive, so that all the content of the page automatically responds and adapts based on the size of screen they are presented on. I used HTML and CSS to automatically resize, hide, shrink, or enlarge, my web pages, to make them look good on mobile devices. 
  
