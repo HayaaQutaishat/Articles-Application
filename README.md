@@ -175,14 +175,30 @@ This page informs the computer or website that the current user wishes to end th
   - styles.css file: This css file contains all of the css used to style this web application. Techniques like flexbox and grid are used. This file stores all the style informations that all the pages share to create a great user experience.
   - index.js file: This file adds a dynamic and interactive elements to all webpages. This file contains all the functions that I want to include on each of this site's webpages. This file also use fetch() method to send asynchronous requests to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON.
 
-- Other less important files like urls, admin, settings. 
+- Other important files like settings.py which is a core file in Django projects. It holds all the configuration values that your web app needs to work; database settings, logging configuration, where to find static files, API keys if you work with external APIs, and a bunch of other stuff.
+- urls.py the most important thing is the "urlpatterns" tuple. It's where you define the mapping between URLs and views. A mapping is a tuple in URL patterns like − from django. conf. urls import patterns, include, url from django.
 
-## Distinctiveness and Complexity:
 
-The page is not similar to anything we have already created. It's not a social media app nor an e-commerce. It's not similar to other years projects either.
+## Distinctiveness and Complexity :
 
-In terms of complexity, I used Django with more than one model (explained above) and javascript to the frontend. Moreover, all of the web application is mobile responsive. 
+I believe this project satisfies all the distinctiveness and complexity requirements as it is a platform for searching and reading new articles. It is not similar to anything we have already created in this course. It's not a social media app nor an e-commerce website. It's not similar to other years projects either.
 
+In terms of complexity, I used Django with more than one model (User, Categories, Article, Comment, Profile and Rating explained above in details) each model maps to a single database table, to define the structure of the stored data, including the field types and possibly also their maximum size and default values. All models are stored in models.py file. 
+
+Django supports relational databases which allows us to establish relations between different models. In my project I used all three types of relational fields which Django supports: many-to-one, many-to-many and one-to-one. 
+
+In some of my models I used @classmethod which is basically a method of a class having access to every attribute of the class it was called on. This method use cls, which should be the first argument of every class method. So a class method is a method that is bound to the class and not the object of the class. In my case I used it to create objects in my views, for example: creating a new comment object when the use add a new comment on any of the articles and save that object to the database, then rendering that new comment to the screen using Javascript Fetch method, as I will explain in the next paragraph.
+
+Additionally, I used javascript to the frontend and to create all the logic in this web application, also Javascript helped me make this web application pages more interactive and allows the screens to respond to clicks and keystrokes made by the user by using events and events handler.
+
+Besides, I used the Fetch() API method to allow to asynchronously HTTP request for a resource so I can retrieve data from a URL without having to do a full page refresh. The fetch() method returns a promise that resolves into a Response object, to get the actual data, I called one of the methods of the Response object (text() or json()). These methods resolve into the actual data.
+However, I wrote all my scripts in signel separate file (index.js) and I refered to it using the src attribute in the <script> tag.
+ 
+Furthermore, I implemented a simple five stars rating sytstem using Javascript in order to allow users to rate each article in the website. When the user hovers on any star, the color of that star will change to yellow which means that star is activated. I used the switch statement which is used to perform different actions based on different conditions. I also created a model called Rating which has a user, article and score fields. The score field has a maximum value validator of 5 and minimum value validator of 0. I also used @classmethod to create rating objects in store them in the database by applying save() method on that new object.
+ 
+
+Finally, all of the web application pages are completely mobile responsive, so that all the content of the page automatically responds and adapts based on the size of screen they are presented on. I used HTML and CSS to automatically resize, hide, shrink, or enlarge, my web pages, to make them look good on mobile devices. 
+ 
 ## Setup :
 
 Requires Python3 and the package installer for Python (pip) to run:
@@ -204,6 +220,17 @@ Built with Python, Django, HTML, CSS, Javascript and Bootstrap.
 - This application has 5 models in addition to the User model: one for categories, one for articles, one for authors profile page , one for comments and one for ratings made on articles.
 
 <img width="1440" alt="Screen Shot 2022-08-16 at 3 09 07 PM" src="https://user-images.githubusercontent.com/95029840/184887996-3cb349cd-013e-4b5a-a539-872b9e510a71.png">
+
+# Back End
+
+## Super User
+
+Super user is a feature provided by Django. The super user can manipulate all data in the Backend Management Dashboard.
+ 
+<img width="1431" alt="Screen Shot 2022-09-09 at 4 01 39 PM" src="https://user-images.githubusercontent.com/95029840/189368159-c9681e8f-6920-40ef-b8a1-9611e14fc04d.png">
+
+ 
+Super user can also view all the details of all users.
 
 
 ## Requirements:
