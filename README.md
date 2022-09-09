@@ -175,7 +175,9 @@ This page informs the computer or website that the current user wishes to end th
   - styles.css file: This css file contains all of the css used to style this web application. Techniques like flexbox and grid are used. This file stores all the style informations that all the pages share to create a great user experience.
   - index.js file: This file adds a dynamic and interactive elements to all webpages. This file contains all the functions that I want to include on each of this site's webpages. This file also use fetch() method to send asynchronous requests to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON.
 
-- Other less important files like urls, admin, settings. 
+- Other important files like settings.py which is a core file in Django projects. It holds all the configuration values that your web app needs to work; database settings, logging configuration, where to find static files, API keys if you work with external APIs, and a bunch of other stuff.
+- urls.py the most important thing is the "urlpatterns" tuple. It's where you define the mapping between URLs and views. A mapping is a tuple in URL patterns like − from django. conf. urls import patterns, include, url from django.
+
 
 ## Distinctiveness and Complexity :
 
