@@ -1,4 +1,4 @@
-# CS50W-Project 4-Final
+# Articles Platform
 
 ## CS50 Web - Programming with Python and JavaScript. 
 
